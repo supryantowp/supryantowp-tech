@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Forum",
+    "stack": ["ReactJS", "Chakra UI", "ExpressJS", "MongoDB"],
+    "images": "/projects/forum.png",
+    "isOpenSource": false,
+    "link": "https://github.com/supryantowp/rpl"
+  },
+  {
+    "title": "Pendaftaran Siswa Baru",
+    "stack": ["Laravel", "Bootstrap"],
+    "images": "/projects/psb.png",
+    "isOpenSource": false,
+    "link": "https://github.com/supryantowp/ppdb"
+  },
+  {
+    "title": "Management Kelas",
+    "stack": ["Laravel", "Vue"],
+    "images": "/projects/kelas.png",
+    "isOpenSource": true,
+    "link": "https://github.com/supryantowp/server-class"
+  }
+]
