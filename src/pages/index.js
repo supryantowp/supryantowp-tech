@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@chakra-ui/core";
+import { Box, Heading, Text } from "@chakra-ui/core";
 
 import Project from "../components/project";
 import Post from "../components/post";
@@ -11,10 +11,8 @@ import Layout from "../hoc/layout";
 
 const boxStyle = {
   bg: "gray.600",
-  p: "2rem",
   borderRadius: "5px",
   color: "white",
-  mt: "-1rem",
   zIndex: "2",
 };
 
@@ -22,8 +20,23 @@ const HomePage = () => {
   return (
     <Layout>
       <Hero />
-      <Box {...boxStyle}>
+      <Box p={["1rem", "2rem"]} mt={["3rem", "-1rem"]} {...boxStyle}>
+        <Heading fontSize="24px" mb="0.4rem">
+          My Projects
+        </Heading>
+        <Text fontSize="16px">
+          Here are some of my past works from personal projects and open source
+          ones.
+        </Text>
         <Project data={projectsJSON} isViewAll="true" />
+
+        <Heading mt="1rem" fontSize="24px" mb="0.4rem">
+          My Post
+        </Heading>
+        <Text fontSize="16px">
+          Sometimes I write about web development, other times about random
+          interesting stuff.
+        </Text>
         <Post data={postsJSON} isViewAll="true" />
       </Box>
     </Layout>

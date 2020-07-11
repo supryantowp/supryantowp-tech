@@ -12,11 +12,6 @@ import {
 const Project = ({ data, isViewAll = false }) => {
   return (
     <Box>
-      <Heading fontSize="24px" mb="0.4rem">
-        My Projects
-      </Heading>
-      <Text fontSize="16px">this is the result of my project</Text>
-
       <SimpleGrid mt="2rem" mb="1rem" columns={[1, 2]} spacing={5}>
         {data.map((item, i) => {
           return (
@@ -29,13 +24,15 @@ const Project = ({ data, isViewAll = false }) => {
             >
               <Skeleton isLoaded>
                 {item.isOpenSource ? (
-                  <Link color="primary.300">
+                  <Link color="primary.300" isExternal href={item.link}>
                     <Heading fontSize="20px">{item.title}</Heading>
                   </Link>
                 ) : (
-                  <Heading color="primary.300" fontSize="20px">
-                    {item.title}
-                  </Heading>
+                  <Link color="primary.300">
+                    <Heading color="primary.300" fontSize="20px">
+                      {item.title}
+                    </Heading>
+                  </Link>
                 )}
               </Skeleton>
 

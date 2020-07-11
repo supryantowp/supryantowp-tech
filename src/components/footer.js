@@ -1,11 +1,12 @@
 import React from "react";
 import { Stack, Box, Text, Link, SimpleGrid, Divider } from "@chakra-ui/core";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Box>
       <Divider mt="5rem" />
-      <SimpleGrid columns={2} padding="2rem">
+      <SimpleGrid columns={2} padding={["1rem", "2rem"]}>
         <Stack color="white" align="space-between">
           <Box>
             <Text>
@@ -19,9 +20,15 @@ const Footer = () => {
           </Text>
         </Stack>
         <Stack ml="auto" color="white">
-          <Link>Blog</Link>
-          <Link>Projects</Link>
-          <Link>About</Link>
+          <NavLink to="/blog">
+            <Link>Blog</Link>
+          </NavLink>
+          <NavLink to="/project">
+            <Link>Projects</Link>
+          </NavLink>
+          <NavLink to="/about">
+            <Link>About</Link>
+          </NavLink>
         </Stack>
       </SimpleGrid>
     </Box>

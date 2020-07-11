@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 
 const Layout = ({ children }) => {
   return (
-    <Box paddingX={["2rem", "2rem", "2rem", "10rem"]} paddingY="1.5rem">
+    <Box paddingX={["1rem", "1rem", "1rem", "10rem"]} paddingY="1.5rem">
       <Navbar />
       {children}
 
