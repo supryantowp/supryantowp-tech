@@ -4,7 +4,7 @@ import { Box, Stack, Heading, Text, Link, Avatar } from "@chakra-ui/core";
 import me from "../assets/me.png";
 const AboutMe = (props) => {
   return (
-    <Stack {...props} spacing="2">
+    <Stack {...props} spacing="5">
       <Box>
         <Heading>Hi, I'm Supryanto.</Heading>
         <Text fontSize="18px" mt="1rem">
@@ -72,10 +72,10 @@ const AboutMe = (props) => {
           </Link>
         </Text>
       </Box>
-      <Box>
+      <Box mx="auto">
         <Avatar
-          width="300px"
-          height="300px"
+          width={["200px", "300px"]}
+          height={["200px", "300px"]}
           src={me}
           name="Supryanto Widadi Putra"
         />

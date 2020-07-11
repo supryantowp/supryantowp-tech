@@ -34,9 +34,11 @@ const Post = ({ data, isViewAll = false }) => {
 
       {isViewAll ? (
         <Box mb="4rem">
-          <Link float="right" color="primary.300">
-            View all posts
-          </Link>
+          <NavLink to="/blog">
+            <Link float="right" color="primary.300">
+              View all posts
+            </Link>
+          </NavLink>
         </Box>
       ) : null}
     </Box>

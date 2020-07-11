@@ -8,6 +8,7 @@ import {
   SimpleGrid,
   Skeleton,
 } from "@chakra-ui/core";
+import { NavLink } from "react-router-dom";
 
 const Project = ({ data, isViewAll = false }) => {
   return (
@@ -50,9 +51,11 @@ const Project = ({ data, isViewAll = false }) => {
 
       {isViewAll ? (
         <Box mb="6rem">
-          <Link float="right" color="primary.300">
-            View all project
-          </Link>
+          <NavLink to="/project">
+            <Link float="right" color="primary.300">
+              View all project
+            </Link>
+          </NavLink>
         </Box>
       ) : null}
     </Box>
